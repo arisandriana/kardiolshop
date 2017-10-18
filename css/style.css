@@ -1,0 +1,256 @@
+
+* {
+	margin:0px;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: url(../gambar/backgrounds/body.jpg)left top repeat; 
+}
+a:link,a:visited {
+  color:#265180;
+  text-decoration:none;
+}
+a:hover {
+	color: #FF6600;
+	text-decoration:none;
+}
+table {
+	font-family: Arial, Helvetica, sans-serif;
+	color:#696969;
+}
+input[type=text] {
+	padding:5px;
+    width: 130px;
+	margin-top:0px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+    width: 100%;
+}
+/*
+ Button
+*/
+
+.button1 {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  width:100px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button1 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button1 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.button1:hover span {
+  padding-right: 15px;
+}
+
+.button1:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*
+ tabel
+*/
+
+.list {
+	border-collapse: collapse;
+	width: 100%;
+	border-top: 1px solid #BFBFBF;
+	border-left: 1px solid #BFBFBF;
+	margin-bottom: 2px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top:5px;
+}
+.list td {
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+.list thead td {
+	background-color: #E5E5E5; 
+	padding: 5px 5px; text-transform: capitalize;
+}
+.list thead td a, .list thead td {
+	text-decoration: none; 
+	color: #000000;
+	font-weight: bold;
+	
+}
+.list tbody a {
+	text-decoration: none;
+}
+.list tbody td {
+	vertical-align: middle;
+	padding: 3px 5px;
+}
+.list tbody tr:odd {
+	background: #FFFFFF;
+}
+.list tbody tr:even {
+	background: #E4EEF7;
+}
+.list .left {
+	text-align: left;
+	padding: 7px;
+}
+.list .right {
+	text-align: right;
+	padding: 7px;
+}
+.list .center {
+	text-align: center;
+	padding: 7px;
+}
+.list .asc {
+	padding-right: 15px;
+	background: url('images/asc.png') right center no-repeat;
+}
+.list .desc {
+	padding-right: 15px;
+	background: url('images/desc.png') right center no-repeat;
+}
+/* Awal */
+
+#container-center {
+	width:auto;
+	border: #000000 0px solid;
+	margin: 0 auto;
+	background-color:#FEFEFE;
+}
+#nav{
+	width:100%;
+	border: #000000 0px solid;
+	padding:10px;
+	position:fixed;
+	font-weight:bold;
+	background-color:#fff;
+	-webkit-box-shadow:  6px 0px 6px 0px rgba(0, 0, 0, 0.3);
+	box-shadow:  0px 0px 6px 0px rgba(0, 0, 0, 0.3);
+}
+#nav select{
+	width:auto;
+	margin:0px 0px 0px 5px;
+}
+#nav ul{
+	list-style-type:none;
+}
+#nav li{
+	display:inline;
+}
+.konten {
+	float:left;
+	width:100%;
+	border: #000000 0px solid;
+	margin-bottom:10px;
+}
+.konten textarea,select {
+	width:100%;
+	border: #DCDCDC 1px solid;
+	font-family: Arial, Helvetica, sans-serif;
+	padding:5px;
+}
+.konten input {
+	width:98%;
+	font-family: Arial, Helvetica, sans-serif;
+	border-radius:0px;
+	padding:5px;
+	margin:0px 5px 0px 5px;
+}
+.konten textarea {
+	height:200px;
+}
+.konten-kiri {
+	width:20%;
+	position:fixed;
+	border: #DCDCDC 0px solid;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top-width:0px;
+}
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+	font-size:10pt;
+}
+
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: #F08080; /* Add a green color to the "active/current" link */
+    color: white;
+}
+
+
+
+
+.banner-iklan {
+	float:left;
+	width:70%;
+	border: #DCDCDC 0px solid;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:#fff;
+	margin-top:35px;
+}
+.konten-kanan {
+	float:right;
+	width:79%;
+	border: #DCDCDC 0px solid;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:#fff;
+}
+.list-produk {
+	float:left;
+	border: #DCDCDC 0px solid;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:#fff;
+}
+.list-box-produk {
+	float:left;
+	border: #DCDCDC 1px solid;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color:#fff;
+	margin-top:10px;	
+	margin-right:5px;
+	border-radius:5px;
+}
+.list-box-produk img {
+	float:left;
+	padding:5px;
+	width:130px;
+}
+.list-box-produk:hover {
+	border: #F08080 1px solid;
+}
